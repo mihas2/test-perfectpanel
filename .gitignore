@@ -3,3 +3,4 @@
 /.idea/
 /.git/
 /var/cache/
+/docker/log/
