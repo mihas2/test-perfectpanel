@@ -1,0 +1,26 @@
+version: '2'
+services:
+    php7:
+        build: ./docker/container/php7
+        ports:
+            - 9010-9015:9010-9015
+        volumes:
+            - ./:/var/www
+            - ./docker/etc/php/7.4/cli/php.ini:/etc/php/7.4/cli/php.ini
+            - ./docker/etc/php/7.4/fpm/php.ini:/etc/php/7.4/fpm/php.ini
+            - ./docker/etc/php/7.4/fpm/php-fpm.conf:/etc/php/7.4/fpm/php-fpm.conf
+            - ./docker/etc/php/7.4/fpm/pool.d:/etc/php/7.4/fpm/pool.d
+            - ./docker/log/php:/var/log/php
+        env_file: .env
+    nginx:
+        image: nginx
+        ports:
+            - 80:80
+            - 443:443
+        volumes:
+            - ./docker/etc/nginx/conf.d/sites-enabled:/etc/nginx/conf.d
+            - ./docker/etc/nginx/ssl:/etc/nginx/ssl
+            - ./:/var/www
+            - ./docker/log/nginx:/var/log/nginx
+        links:
+            - php7

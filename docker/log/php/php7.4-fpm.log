@@ -1,0 +1,15 @@
+[18-Jul-2021 17:27:55] NOTICE: fpm is running, pid 1
+[18-Jul-2021 17:27:55] NOTICE: ready to handle connections
+[18-Jul-2021 17:27:55] NOTICE: systemd monitor interval set to 10000ms
+[18-Jul-2021 17:28:01] NOTICE: Terminating ...
+[18-Jul-2021 17:28:01] NOTICE: exiting, bye-bye!
+[18-Jul-2021 17:28:04] NOTICE: fpm is running, pid 1
+[18-Jul-2021 17:28:04] NOTICE: ready to handle connections
+[18-Jul-2021 17:28:04] NOTICE: systemd monitor interval set to 10000ms
+[18-Jul-2021 17:42:23] ALERT: oops, unknown child (149) exited on signal 1 (SIGHUP). Please open a bug report (https://bugs.php.net).
+[18-Jul-2021 17:50:50] ALERT: oops, unknown child (427) exited on signal 1 (SIGHUP). Please open a bug report (https://bugs.php.net).
+[18-Jul-2021 19:00:42] NOTICE: Terminating ...
+[18-Jul-2021 19:00:42] NOTICE: exiting, bye-bye!
+[18-Jul-2021 19:00:44] NOTICE: fpm is running, pid 1
+[18-Jul-2021 19:00:44] NOTICE: ready to handle connections
+[18-Jul-2021 19:00:44] NOTICE: systemd monitor interval set to 10000ms
